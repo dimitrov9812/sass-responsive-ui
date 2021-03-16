@@ -1,0 +1,80 @@
+@import "./config";
+
+.contacts {
+    height: 100%;
+    padding-top: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
+        ),
+        url('../dist/img/model-1.jpg') center top;
+    background-size: cover;
+
+    
+
+    &-name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid setTextColor($primary-color);
+
+        &-last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+
+   
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: lighten($primary-color, 10%);
+        padding: 2rem;
+        border-bottom: 5px solid $secondary-color;
+        width: 100%;
+        align-items:center;
+        opacity: 0.8;
+
+        h2 {
+            color: $secondary-color;
+            margin-bottom: 1rem;
+            align-self: center;
+            z-index: 4;
+        }
+
+        .divider {
+            border: 2px solid white;
+            width: 20rem;
+            margin-bottom: 1rem;
+            z-index: 4;
+        }
+
+        .contact-email, .contact-phone, .contact-address {
+            display: flex;
+            margin-bottom: 1rem;
+            z-index: 4;
+
+            .text-secondary {
+                margin-left: 1rem;
+                z-index: 4;
+            }
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+        
+        .social-icons {
+            position: relative;
+            margin-top: 2rem;
+        }
+    }
+}

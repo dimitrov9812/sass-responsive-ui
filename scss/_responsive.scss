@@ -1,0 +1,38 @@
+@include media-md {
+    .menu-button {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &-item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &-link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .projects {
+        .project-items {
+            width: 90vw;
+        }
+    }
+}
+
+@include media-xl {
+    .project-bio-image {
+        height: 70vh;
+    }
+}
